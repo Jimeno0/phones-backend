@@ -1,4 +1,4 @@
-const phonesData = require('./phonesData.json')
+const phonesData = require('./phonesData.js')
 
 const phones = (req, res) => {
   try {
