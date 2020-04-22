@@ -1,4 +1,4 @@
-const phonesData = require('./phonesData.js')
+const phonesData = require('../public/phonesData.js')
 
 const phones = (req, res) => {
   try {
