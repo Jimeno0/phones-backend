@@ -1,10 +1,13 @@
-const phonesData = require('../public/phonesData.js')
+const phoneSchema = require('../schemas/phone')
+const mongoose = require('mongoose')
 
-const phones = (req, res) => {
+const phones = async (req, res) => {
+  const Phone = mongoose.model('phones', phoneSchema)
   try {
-    res.json(phonesData)
+    const all = await Phone.find({})
+    res.json(all)
   } catch (error) {
-    res.status(500).send('Something happend!')
+    res.status(500).send('Something broke!')
   }
 }
 
