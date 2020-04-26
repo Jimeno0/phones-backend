@@ -13,5 +13,6 @@ db.once('open', () => {
   Phone.collection.insert(phonesData, (err, docs) => {
     if (err) return console.error(err)
     console.log('Multiple phones inserted to Collection')
+    mongoose.disconnect()
   })
 })
