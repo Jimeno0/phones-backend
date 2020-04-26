@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "serve" : "node index.js",
-    "populate" : "node ./migrations/generatePhones.js"
+    "populate" : "node ./populate/generatePhones.js"
   },
   "author": "jimeno0",
   "license": "ISC",
